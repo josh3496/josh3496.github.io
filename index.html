@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SundaySky</title>
+</head>
+
+<body>
+    <div id='sskydiv'></div>
+    <script>
+        function createPlayer() {
+            var sskyplayer = document.createElement('sundaysky-video');
+            sskyplayer.setAttribute('id', 'sskyplayer'); 
+            sskyplayer.setAttribute('analytics-token', 'cfb05396-8f2a-433f-b5f3-b32a383cf801'); 
+            sskyplayer.setAttribute('endpoint-url', 'https://sf-elevancemedicaidob.web.sundaysky-sandbox.com/create_video_session'); 
+            sskyplayer.setAttribute('transcript-button', 'show'); 
+            sskyplayer.setAttribute('session-parameters', '{"program":"cfb05396-8f2a-433f-b5f3-b32a383cf801","id":"123",“source”:”email”}');}
+            createPlayer();
+    </script>
+    <script src='https://play.sundaysky.com/main/sundaysky-player.grey.en-us.min.js'> </script>
+
+</body>
+
+</html>
